@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+
+    width: 100%;
+    height: 100vh;
+    margin: 20px;
+    background-color: rgb(179, 177, 174);
+}
+
+.main{
+    padding: 90px 0 90px 0 ;
+    background-color: rgb(196, 193, 187);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic{
+    background-color:  rgb(179, 177, 174) ;
+    padding: 25px 0 25px 0;
+    width: 250px;
+    border: 1px solid rgb(196, 193, 187);
+    display: flex;
+    justify-content: center;
+}
+
+img:hover{
+    transform: scale(1.25);
+}
+
+
+
+
+/* styles.css */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.lightbox-content img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
