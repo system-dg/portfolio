@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculater</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div class="main">
+
+        <h1>Calculater</h1>
+
+        <input id="display"  type="text">
+
+        <div class="buttons">
+
+            <div class="one">
+                <button  onclick="allclear()"  style="background-color: rgb(224, 101, 101);" id="myButton" >C</button>
+                <button onclick="displayValue('%')"  id="myButton">%</button>
+                <button onclick="delval()"  id="myButton">Del</button>
+                <button onclick="displayValue('/')"  id="myButton">/</button>
+            </div>
+
+            <div class="one">
+                <button onclick="displayValue(7)" id="myButton">7</button>
+                <button onclick="displayValue(8)" id="myButton">8</button>
+                <button  onclick="displayValue(9)" id="myButton">9</button>
+                <button  onclick="displayValue('*')" id="myButton">*</button>
+            </div>
+
+            <div class="one">
+                <button onclick="displayValue(4)"  id="myButton">4</button>
+                <button onclick="displayValue(5)"  id="myButton">5</button>
+                <button onclick="displayValue(6)"  id="myButton">6</button>
+                <button onclick="displayValue('-')"  id="myButton">-</button>
+            </div>
+
+            <div class="one">
+                <button onclick="displayValue(1)"  id="myButton">1</button>
+                <button onclick="displayValue(2)"  id="myButton">2</button>
+                <button onclick="displayValue(3)"  id="myButton">3</button>
+                <button onclick="displayValue('+')"  id="myButton">+</button>
+            </div>
+
+            <div class="one">
+                <button  onclick="displayValue('00')" id="myButton">00</button>
+                <button onclick="displayValue(0)"  id="myButton">0</button>
+                <button onclick="displayValue('.')"  id="myButton">.</button>
+                <button onclick="solve()"  style="background-color: rgb(90, 190, 90);" id="myButton">=</button>
+            </div>
+        </div>
+    </div>
+    
+<script src="script.js"></script>
+    
+</body>
+</html>
