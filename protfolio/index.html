@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <header>
+        <div class="logo">
+            <h1>Portfolio..</h1>
+        </div>
+
+        <svg id="threeDot" xmlns="http://www.w3.org/2000/svg" onclick="toggleOn()" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-ellipsis-vertical-icon lucide-ellipsis-vertical"><circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/></svg>
+
+        <div class="nav" id="nav">
+            <li><svg onclick="toggleOff()" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></li>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Project">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </div>
+    </header>
+
+    <!-- panel -->
+
+    <div class="panel">
+
+        <!-- Home -->
+        <section class="section home" id="Home">
+            <h2>Hello It's Me..</h2>
+            <h1>Desigan</h1>
+            <h2>And I'm a <span style="color: red;">Web Developer</span></h2>
+            <p>Self-learning Enthusiast | Hardworking | Motivated Individual | Adaptive Problem Solver |
+                Collaborative Team Player | Actively seeking opportunities to apply my skills and drive
+                impactful results in dynamic environments.</p>
+
+            <div class="links">
+                <span><a href="https://www.linkedin.com/in/desigana"><i class='bx bxl-linkedin'></i></a></span>
+                <span><a href="https://github.com/desigana"><i class='bx bxl-github'></i></a> </span>
+            </div>
+
+            <button class="resume"><a href="src/Desigan A res.pdf" download>Resume</a></button>
+            <div class="btns">
+                <button class="next"><a href="#About">Next</a></button>
+            </div>
+        </section>
+
+        <!-- About section -->
+
+        <section class="section about" id="About">
+            
+            <h1 class="about-h1">About <span style="color: white;">Me</span></h1>
+            <div class="content">
+                <H3>Hi, I'm Desigan A,</H3>
+                <P>A passionate frontend developer who thrives on transforming ideas into captivating web experiences.
+                    With a strong foundation in HTML5, CSS3, and JavaScript, I specialize in creating responsive,
+                    User-friendly websites. I am currently pursuing a Bachelor of Engineering in Electronics and
+                    Communication Engineering at Dhanalakshmi Srinivasan College of Engineering and Technology, expected
+                    to graduate in 2025. My projects include a simple music player built with HTML, CSS, and JavaScript,
+                    an image gallery showcasing photos with a lightbox feature, and a basic calculator application
+                    designed to perform arithmetic operations. I enjoy exploring new technologies, taking on coding
+                    challenges, and contributing to open-source projects. My goal is to craft visually appealing and
+                    functional web applications that provide an excellent user experience.
+                </P>
+            </div>
+            <div class="certificates_projects">
+                <button><a href="https://github.com/desigan/certificats">Certificates</a></button>
+                <button><a href="#Project">Projects</a></button>
+            </div>
+            <div class="btns">
+                <button class="next"><a href="#Home">Home</a></button>
+                <button class="next"><a href="#Project">Next</a></button>
+            </div>
+        </section><br>
+
+
+        
+        <!-- project section -->
+        <section class="section my_project" id="Project">
+            <h1>My <span style="color: red;">Projects</span></h1>
+            <div class="projects">
+                <div class="project">
+                    <div class="project-inner">
+
+                        <div class="project-front">
+                            <h2>London University Portal (UI Clone)</h2>
+                            <p>A university service portal with search, service catalog, and knowledge base pages.
+Features include quick-access services, request tracking, FAQs, and announcements.
+Designed with clean UI/UX principles for an engaging student experience.
+                            </p>
+                        </div>
+
+                        <div class="project-back">
+                            <button>
+                                <a href="src/projects/london university/index.html">Live Demo</a>
+                            </button>
+                            <button>
+                                <a href="#">GitHub</a>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="project">
+                    <div class="project-inner">
+
+                        <div class="project-front">
+                            <h2>Personal Portfolio Blue</h2>
+                            <p>A simple portfolio site built with HTML, CSS, and JavaScript to showcase my skills, projects, and resume. Features include smooth navigation, project highlights, and a contact form.
+                            </p>
+                        </div>
+
+                        <div class="project-back">
+                            <button>
+                                <a href="src/projects/portfolio-blue/index.html">Live Demo</a>
+                            </button>
+                            <button>
+                                <a href="#">GitHub</a>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="project">
+                    <div class="project-inner">
+
+                        <div class="project-front">
+                            <h2>Alarm Manager</h2>
+                            <p>A simple web-based alarm system built with HTML, CSS, and JavaScript. Supports both time-based and countdown alarms with custom labels for reminders.
+                            </p>
+                        </div>
+
+                        <div class="project-back">
+                            <button>
+                                <a href="src/projects/alarm-desktop-app/index.html">Live Demo</a>
+                            </button>
+                            <button>
+                                <a href="#">GitHub</a>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="project">
+                    <div class="project-inner">
+
+                        <div class="project-front">
+                            <h2>Calculator App</h2>
+                            <p>A functional calculator built with HTML, CSS, and JavaScript, supporting basic arithmetic operations and clear/delete options. Designed with an interactive button layout for easy use.
+                            </p>
+                        </div>
+
+                        <div class="project-back">
+                            <button>
+                                <a href="src/projects/calculater/index.html">Live Demo</a>
+                            </button>
+                            <button>
+                                <a href="#">GitHub</a>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="project">
+                    <div class="project-inner">
+
+                        <div class="project-front">
+                            <h2>Stopwatch App</h2>
+                            <p>A lightweight stopwatch built with HTML, CSS, and JavaScript, featuring start, stop, and reset functionalities. Designed with a clean and minimal UI.
+                            </p>
+                        </div>
+
+                        <div class="project-back">
+                            <button>
+                                <a href="src/projects/stopwatch_timer/index.html">Live Demo</a>
+                            </button>
+                            <button>
+                                <a href="#">GitHub</a>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="project">
+                    <div class="project-inner">
+
+                        <div class="project-front">
+                            <h2>Password Generator</h2>
+                            <p>A secure password generator built with HTML, CSS, and JavaScript, allowing users to customize password length and include uppercase, lowercase, numbers, and symbols.
+                            </p>
+                        </div>
+
+                        <div class="project-back">
+                            <button>
+                                <a href="src/projects/Password generator system/index.html">Live Demo</a>
+                            </button>
+                            <button>
+                                <a href="#">GitHub</a>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="project">
+                    <div class="project-inner">
+
+                        <div class="project-front">
+                            <h2>Random Image Gallery</h2>
+                            <p>A responsive image gallery showcasing a collection of random images with a clean grid layout. Built using HTML and CSS for smooth alignment and design.
+                            </p>
+                        </div>
+
+                        <div class="project-back">
+                            <button>
+                                <a href="src/projects/Image Gallery/index.html">Live Demo</a>
+                            </button>
+                            <button>
+                                <a href="#">GitHub</a>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="project">
+                    <div class="project-inner">
+
+                        <div class="project-front">
+                            <h2>Analog Clock</h2>
+                            <p>A functional analog clock built with HTML, CSS, and JavaScript. It displays real-time hours, minutes, and seconds with smooth hand movement.
+                            </p>
+                        </div>
+
+                        <div class="project-back">
+                            <button>
+                                <a href="src/projects/analog_clock/index.html">Live Demo</a>
+                            </button>
+                            <button>
+                                <a href="#">GitHub</a>
+                            </button>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+            <div class="btns">
+                <button class="next"><a href="#Home">Home</a></button>
+                <button class="next"><a href="#Contact">Next</a></button>
+            </div>
+        </section>
+        
+        <!-- contact section -->
+
+        <section class="section contact" id="Contact">
+            <h1>Get in Touch</h1>
+            <form method="post" action="https://script.google.com/macros/s/AKfycbzmvSfBZm34nuQm8m8_CUXwhZUwJ1PsHe5nJ13zaZZymYHyip5fTWEK6YHSKS0qoan_-Q/exec">
+                <input name="name" class="inp" type="text" placeholder="Enter Your Name" required>
+                <input name="email" class="inp" type="email" placeholder="Enter Your Email" required>
+                <input name="mobile" class="inp" type="number" placeholder="Enter Your Mobile No">
+                <input name="message" class="msg" type="text" placeholder="Feel free to send me a Message...." required>
+                <input class="submit" type="submit">
+            </form>
+            <p>If you have any questions or quiries, feel free to send me a message using the form.</p>
+            <div class="btns">
+                <button class="next"><a href="#Home">Home</a></button>
+            </div>
+        </section>
+
+        
+
+    </div >
+    
+</body>
+
+<script>
+    var nav = document.getElementById("nav");
+    var threeDot = document.getElementById("threeDot");
+    function toggleOn()
+    {
+         nav.style.display="flex";
+         threeDot.style.display="none";
+    }
+    function toggleOff()
+    {
+        nav.style.display="none";
+        threeDot.style.display="flex";
+    }
+    
+</script>
+</html>
