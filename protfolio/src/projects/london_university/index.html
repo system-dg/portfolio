@@ -1,0 +1,775 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="img/logo-removebg-preview.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>London University</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo" data-url="index.html">
+            <a href="index.html">
+               <img src="img/logo-removebg-preview.png">
+               <h2>London University</h2>
+            </a>
+        </div>
+
+        <div class="bar">
+            <nav>
+                <ul>
+                    <li> <a href="#"> Service Request </a></li>
+                    <li> <a href="knowledge.html"> Knowledge Base </a></li>
+                    <li class="lilo"> <a href="#"><img src="img/logo.jpg"> </a></li>
+                    <li class="lilo"><a href="#"> Alma, Student </a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="home">
+            <div class="left">
+                <h2>Hi Alma, What can we help you with</h2>
+
+                <div class="searchbar">
+
+                    <div class="sbar">
+                        <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"style="fill: #595959 ;"><path d="M10 18a7.952 7.952 0 0 0 4.897-1.688l4.396 4.396 1.414-1.414-4.396-4.396A7.952 7.952 0 0 0 18 10c0-4.411-3.589-8-8-8s-8 3.589-8 8 3.589 8 8 8zm0-14c3.309 0 6 2.691 6 6s-2.691 6-6 6-6-2.691-6-6 2.691-6 6-6z"></path></svg></i> -->
+
+                        <img src="img/search.png">
+                        <input class="search" id="search" type="text" placeholder="Search here">
+                    </div>
+
+                    <button>Search</button>
+                </div>
+
+                <div class="password-reset" id="password-reset">
+                    <div class="submit-ticket">
+                        <p>Submit a Ticket</p>
+                        <small><i class='bx bx-bookmark'></i> Request Username/Password Rest</small>
+                        <small><i class='bx bx-bookmark'></i>  Get Help with Texas University</small>
+                        <small><i class='bx bx-bookmark'></i>  Contact Admin</small>
+                    </div>
+
+                    <div class="read-knowledge">
+                        <p>Read a Knowledge Article</p>
+                        <small><i class='bx bx-food-menu' style='color:#878383'  ></i>  How to Reast Your Epic Password</small>
+                        <small><i class='bx bx-food-menu' style='color:#878383'  ></i>  How to Reast Your Secure Email Password</small>
+                        <small><i class='bx bx-food-menu' style='color:#878383'  ></i>  How to clear passcode on your smartphoe using portal</small>
+                        <small><i class='bx bx-food-menu' style='color:#878383'  ></i>  How to Reast Your login Password</small>
+        
+                        <a href="Knowledge-2.html">View All Search Results</a>
+                    </div>
+                </div>
+
+                <div class="btns">
+                    <button>Setup Email</button>
+                    <button>Reset Password</button>
+                    <button>Setup VPN</button>
+                    <button>Setup Wireless</button>
+                </div>
+
+            </div>
+
+            <div class="right">
+                <img src="img/kkkkk.png ">
+            </div>
+
+        </div>
+
+        <div class="fbox">
+
+            <div class="Report-a-Problem"  id="Report-a-Problem" data-url="create-incident.html">
+                <img src="img/Report.png">
+                <p>Report a Problem</p>
+                <small>Submit a form to Create an incident</small>
+            </div>
+            <div  id="Request-Somthing"> 
+                <img src="img/request.png">
+                <p>Request Somthing</p>
+                <small>Order laptop, Order or Services</small>
+            </div>
+            <div  id="Training-center">
+                <img src="img/training.png">
+                <p>Training center</p>
+                <small>Links to helpful software and technology training resources</small>
+            </div>
+            <div  id="Social Q&A">
+                <img src="img/social.png">
+                <p>Social Q&A</p>
+                <small>Community Sourrced answer to your question</small>
+            </div>
+
+        </div>
+        <!-- message -->
+        <div class="circle-container">
+            <div class="circle" id="message-icon">
+                <i class='bx bxs-message-rounded-dots' style='color:#e80505'  ></i>                <!-- <img src="img/msg.png"> -->
+            </div>
+
+            <div for="circle-container" class="chat-popup" id="chat-popup">
+                <div class="chat-header">
+                    <div class="set-pro-x">
+
+                        <div class="profile">
+                            <i class='bx bxs-message-rounded-dots' style='color:#dc0000'></i>
+                        </div>
+                        Star Support
+                    </div>
+                    <span id="close-btn" class="close-btn">x</span>
+                </div>
+
+                <div class="chat-date">
+                    Aug 5th 2024
+                </div>
+
+                <div class="chat-messages" id="chat-messages">
+                    <div class="message received">Hello Alma!</div>
+                    <div class="message received">Let me know How can I help with you today. what's your issue or request or take a look what I can help you with...</div>
+                    <button class="default-button" id="default-button">Show me all option</button>
+                </div>
+                <div class="suggestions" id="suggestions" style="display: none;">
+                    <div class="title">Matching Request <span id=" sugges-close-btn" class="close-btn">x</span></div>
+                    <div class="suggestion">Wi-Fi not working</div>
+                    <div class="suggestion">No internet connection</div>
+                </div>
+                <div class="verification" id="verification">
+                    <div class="message">Please verify your current computer Model: Lenovo E41</div>
+                    <button id="verification-yes">Yes</button>
+                    <button id="verification-no" class="no">No</button>
+                </div>
+                <div class="chat-input" id="chat-input-container">
+                    <textarea id="message-input" rows="1" placeholder="Type a message..."></textarea>
+                    <button id="send-button"><i class='bx bx-send' style='color:#e80505' ></i></button>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- page2 -->
+
+        <div class="page2">
+            <h2>Frequently Used Service Caralog</h2>
+
+            <div class="freq">
+                <div>
+                    <img src="img/zoom.png">
+                    <p>Zoom</p>
+                </div>
+                <div>
+                    <img src="img/student.png">
+                    <p>Student and Academic Services Administration</p>
+                </div>
+                <div class="teaching-learning" data-url="teach&learn.html">
+                    <img src="img/teaching.png">
+                    <p>Teaching & Learning</p>
+                </div>
+                <div>
+                    <img src="img/surveys.png">
+                    <p>Surveys</p>
+                </div>
+                <div>
+                    <img src="img/policies.png">
+                    <p>University Policies</p>
+                </div>
+                <div>
+                    <img src="img/board.png">
+                    <p>BlackBoard</p>
+                </div>
+                <div>
+                    <img src="img/library.png">
+                    <p>University Library</p>
+                </div>
+                <div>
+                    <img src="img/research.png">
+                    <p>Conducting Research</p>
+                </div>
+            </div>
+
+            <div class="my">
+
+                <div class="first">
+
+                    <div class="title">
+                        <h3>My Incidents</h3>
+                        <div class="count">12</div>
+                        <small>View All</small>
+                    </div>
+
+                    <div class="cont">
+                        <img src="img/alertt.webp">
+                        <div>
+                            <p>Email Not accessible</p>
+                            <small>IN00010003 . 4 hours ago . <small class="incident">HIGH</small></small>
+                        </div>
+                        <button>Closed</button>
+                    </div>
+                    <div class="cont">
+                        <img src="img/alertt.webp" >
+                        <div>
+                            <p>Unable to login</p>
+                            <small>IN00010003 . 4 hours ago . <small class="incident">HIGH</small></small>
+                        </div>
+                        <button>Closed</button>
+                    </div>
+                    <div class="cont">
+                        <img src="img/alertt.webp">
+                        <div>
+                            <p>wifi Not Working</p>
+                            <small>IN00010003 . 4 hours ago . <small class="incident">HIGH</small></small>
+                        </div>
+                        <button>Closed</button>
+                    </div>
+                    <div class="cont">
+                        <img src="img/alertt.webp">
+                        <div>
+                            <p>Reset Password</p>
+                            <small>IN00010003 . 4 hours ago . <small class="incident">HIGH</small></small>
+                        </div>
+                        <button>Closed</button>
+                    </div>
+                    <div class="cont">
+                        <img src="img/alertt.webp">
+                        <div>
+                            <p>Systems Not Power Up</p>
+                            <small>IN00010003 . 4 hours ago . <small class="incident">HIGH</small></small>
+                        </div>
+                        <button>Closed</button>
+                    </div>
+
+                </div>
+
+
+                <div class="second">
+
+                    <div class="title">
+                        <h3>My Request</h3>
+                        <div class="count">7</div>
+                        <small>View All</small>
+                    </div>
+
+                    <div class="cont">
+                        <img src="img/laptop.png">
+                        <div>
+                            <p>Laptop</p>
+                            <small>RE00010003 . 4 hours ago </small>
+                        </div>
+                        <button>Closed</button>
+                    </div>
+                    <div class="cont">
+                        <img src="img/watch.png">
+                        <div>
+                            <p>Apple-Watch</p>
+                            <small>RE00010003 . 4 hours ago </small>
+                        </div>
+                        <button>Closed</button>
+                    </div>
+                    <div class="cont">
+                        <img src="img/desktop.png">
+                        <div>
+                            <p>Desktop</p>
+                            <small>RE00010003 . 4 hours ago </small>
+                        </div>
+                        <button>Closed</button>
+                    </div>
+                    <div class="cont">
+                        <img src="img/facilities.png">
+                        <div>
+                            <p>Facilities</p>
+                            <small>RE00010003 . 4 hours ago </small>
+                        </div>
+                        <button>Closed</button>
+                    </div>
+                    <div class="cont">
+                        <img src="img/security.png">
+                        <div>
+                            <p>Access & Security</p>
+                            <small>RE00010003 . 4 hours ago</small>
+                        </div>
+                        <button>Closed</button>
+                    </div>
+
+                </div>
+
+                <div class="third">
+
+                    <div class="title">
+                        <h3>Course Directory</h3>
+                    </div>
+
+                    <div class="fill">
+
+                        <p>SEARCH BY DEPARTMENT</p>
+                        <select name="dept" id="department">
+                            <option value="Select one">Select one</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                            <option value="option4">Option 4</option>
+                            <option value="option5">Option 5</option>
+                            <option value="option6">Option 6</option>
+                            <option value="option7">Option 7</option>
+                            <option value="option8">Option 8</option>
+                            <option value="option9">Option 9</option>
+                            <option value="option10">Option 10</option>
+                        </select>
+
+                    </div>
+
+                    <div class="fill">
+                        <p>SEARCH BY KEYWORD</p>
+                        <input type="text " placeholder="Select one">
+                    </div>
+
+                    <button>Search</button>
+
+                </div>
+            </div>
+
+            <!-- popular question -->
+            <div class="popular">
+                <h3>Popular Question</h3>
+                <div class="question">
+
+                    <div class="ans">
+                        <div>
+                            <p>How to Get Help IT Product or Service that Broken</p>
+                        </div>
+                        <img src="img/plus.png">
+                    </div>
+                    <div class="ans">
+                        <div>
+                            <p>How to Get with Finance and Payroll Question</p>
+                            <small>If you have a finance and payaroll question or issue, You can submit a request for
+                                help through the <br> Service & Support portal.</small>
+                        </div>
+                        <img src="img/mineze.png">
+                    </div>
+                    <div class="ans">
+                        <div>
+                            <p>How to Request an IT Service</p>
+                        </div>
+                        <img src="img/plus.png">
+                    </div>
+                    <div class="ans">
+                        <div>
+                            <p>How to Search for Answers to Common Questions and Problems </p>
+                        </div>
+                        <img src="img/plus.png">
+                    </div>
+                    <div class="ans">
+                        <div>
+                            <p>How to Find the Status of Your Tickets</p>
+                        </div>
+                        <img src="img/plus.png">
+                    </div>
+                    <div class="ans">
+                        <div>
+                            <p>How to Get Help as a Guest</p>
+                        </div>
+                        <img src="img/plus.png">
+                    </div>
+                    <div class="ans">
+                        <div>
+                            <p>How to Talk to a Live Person</p>
+                        </div>
+                        <img src="img/plus.png">
+                    </div>
+
+
+                </div>
+
+                <p>View All</p>
+
+            </div>
+
+            <div class="page3">
+
+                <div class="events">
+                    <h3>Announcement & Upcoming Events</h3>
+                    <button class="nav-btn left-btn" onclick="prevSet()">🡨</button>
+                    <div class="events-container">
+
+                        <div class="sets">
+                            <div class="set">
+
+                                <div class="event">
+                                    <img class="top" src="img/calender.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Do's and Don'ts for the Undergraduate Admission Proces
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>Do yor have questions regarding the Process for your Undergraduate Studies? This
+                                        session is perfect for you! Do you want to study in the U.S.? Attend our monthly
+                                        online information session to learn about the admissions process and how to
+                                        apply to U.S. Universities.</p>
+
+                                </div>
+                                <div class="event">
+                                    <img class="top" src="img/calender.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Opportunity Funds 2024 Cohort Application Open Now!
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png"> New York
+                                    </small>
+                                    <p>The Opportunity Funds program support support outstanding students with wishes to
+                                        study a complete academic program in U.S. University, at the undergraduate or
+                                        graduate level, by covering costs incurred during the application process.</p>
+
+                                </div>
+                                <div class="event">
+                                    <img class="top" src="img/microphone.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Millions of students are returning to US Universities
+                                        in a vast unplanned pandemic experiments
+                                    </p>
+                                    <!-- <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small> -->
+                                    <p>On 16 August, Waves of eager students begon moving into campus housing at the
+                                        University of Illinois at Urbarna-Champaign. Besides dealing with tearful
+                                        parents and finding sheets to fit non-standard dorm mattresses. It's the first
+                                        time of many: the University plans to test every student</p>
+
+                                </div>
+
+                            </div>
+                            <div class="set">
+                                <div class="event">
+                                    <img class="top" src="img/calender.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Do's and Don'ts for the Undergraduate Admission Proces
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>Do yor have questions regarding the Process for your Undergraduate Studies? This
+                                        session is perfect for you! Do you want to study in the U.S.? Attend our monthly
+                                        online information session to learn about the admissions process and how to
+                                        apply to U.S. Universities.</p>
+
+                                </div>
+                                <div class="event">
+                                    <img class="top" src="img/calender.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Opportunity Funds 2024 Cohort Application Open Now!
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>The Opportunity Funds program support support outstanding students with wishes to
+                                        study a complete academic program in U.S. University, at the undergraduate or
+                                        graduate level, by covering costs incurred during the application process.</p>
+
+                                </div>
+                                <div class="event">
+                                    <img class="top" src="img/microphone.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Do's and Don'ts for the Undergraduate Admission Proces
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>Do yor have questions regarding the Process for your Undergraduate Studies? This
+                                        session is perfect for you! Do you want to study in the U.S.? Attend our monthly
+                                        online information session to learn about the admissions process and how to
+                                        apply to U.S. Universities.</p>
+
+                                </div>
+                            </div>
+                            <div class="set">
+                                <div class="event">
+                                    <img class="top" src="img/calender.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Do's and Don'ts for the Undergraduate Admission Proces
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>Do yor have questions regarding the Process for your Undergraduate Studies? This
+                                        session is perfect for you! Do you want to study in the U.S.? Attend our monthly
+                                        online information session to learn about the admissions process and how to
+                                        apply to U.S. Universities.</p>
+
+                                </div>
+                                <div class="event">
+                                    <img class="top" src="img/calender.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Opportunity Funds 2024 Cohort Application Open Now!
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>The Opportunity Funds program support support outstanding students with wishes to
+                                        study a complete academic program in U.S. University, at the undergraduate or
+                                        graduate level, by covering costs incurred during the application process.</p>
+
+                                </div>
+                                <div class="event">
+                                    <img class="top" src="img/microphone.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Do's and Don'ts for the Undergraduate Admission Proces
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>Do yor have questions regarding the Process for your Undergraduate Studies? This
+                                        session is perfect for you! Do you want to study in the U.S.? Attend our monthly
+                                        online information session to learn about the admissions process and how to
+                                        apply to U.S. Universities.</p>
+
+                                </div>
+                            </div>
+                            <div class="set">
+                                <div class="event">
+                                    <img class="top" src="img/calender.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Do's and Don'ts for the Undergraduate Admission Proces
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>Do yor have questions regarding the Process for your Undergraduate Studies? This
+                                        session is perfect for you! Do you want to study in the U.S.? Attend our monthly
+                                        online information session to learn about the admissions process and how to
+                                        apply to U.S. Universities.</p>
+
+                                </div>
+                                <div class="event">
+                                    <img class="top" src="img/calender.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Opportunity Funds 2024 Cohort Application Open Now!
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>The Opportunity Funds program support support outstanding students with wishes to
+                                        study a complete academic program in U.S. University, at the undergraduate or
+                                        graduate level, by covering costs incurred during the application process.</p>
+
+                                </div>
+                                <div class="event">
+                                    <img class="top" src="img/microphone.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Do's and Don'ts for the Undergraduate Admission Proces
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>Do yor have questions regarding the Process for your Undergraduate Studies? This
+                                        session is perfect for you! Do you want to study in the U.S.? Attend our monthly
+                                        online information session to learn about the admissions process and how to
+                                        apply to U.S. Universities.</p>
+
+                                </div>
+                            </div>
+                            <div class="set">
+                                <div class="event">
+                                    <img class="top" src="img/calender.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Do's and Don'ts for the Undergraduate Admission Proces
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>Do yor have questions regarding the Process for your Undergraduate Studies? This
+                                        session is perfect for you! Do you want to study in the U.S.? Attend our monthly
+                                        online information session to learn about the admissions process and how to
+                                        apply to U.S. Universities.</p>
+
+                                </div>
+                                <div class="event">
+                                    <img class="top" src="img/calender.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Opportunity Funds 2024 Cohort Application Open Now!
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>The Opportunity Funds program support support outstanding students with wishes to
+                                        study a complete academic program in U.S. University, at the undergraduate or
+                                        graduate level, by covering costs incurred during the application process.</p>
+
+                                </div>
+                                <div class="event">
+                                    <img class="top" src="img/microphone.png">
+                                    <small>
+                                        <img src="img/calender_black.png">
+                                        August 8, 2024
+                                    </small>
+                                    <p style="font-weight: bold;">Do's and Don'ts for the Undergraduate Admission Proces
+                                    </p>
+                                    <small>
+                                        <img src="img/clock.png"> 9:00am - 12:30pm <img src="img/location.png">
+                                        Washington, DC
+                                    </small>
+                                    <p>Do yor have questions regarding the Process for your Undergraduate Studies? This
+                                        session is perfect for you! Do you want to study in the U.S.? Attend our monthly
+                                        online information session to learn about the admissions process and how to
+                                        apply to U.S. Universities.</p>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="nav-btn right-btn" onclick="nextSet()"> 🡪</button>
+
+
+
+                    <div class="dots">
+                        <span class="dot" onclick="currentSet(0)"></span>
+                        <span class="dot" onclick="currentSet(1)"></span>
+                        <span class="dot" onclick="currentSet(2)"></span>
+                        <span class="dot" onclick="currentSet(3)"></span>
+                        <span class="dot" onclick="currentSet(4)"></span>
+                    </div>
+                </div>
+
+            </div>
+
+            <h3>contact Us</h3>
+
+            <div class="contact">
+
+                <div class="us">
+                    <img src="img/email.png">
+                    <div>
+                        <P>Email</P>
+                        <div class="sml">
+                            <small>Teachnical Support:</small>
+                            <small style="font-weight: bold;">Support@londonuniversity.com</small>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="us">
+                    <img src="img/call.png">
+                    <div>
+                        <P>Call</P>
+                        <div class="sml">
+                            <small>Help desk Number</small>
+                            <small style="font-weight: bold;">+1 815-423-7159</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="us">
+                    <img src="img/help.png">
+                    <div>
+                        <P>Get Help</P>
+                        <div class="sml">
+                            <small>Click here to open a ticket</small>
+                            <small style="font-weight: bold; color: rgb(204, 0, 0);">Submit a Ticket</small>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <footer>
+                <div class="one">
+                    <h3>London University</h3>
+                </div>
+                <div class="two">
+                    <div>
+                        <ul>
+                            <li>Terms of Use</li>
+                            <li>Privacy</li>
+                            <li>Copyright</li>
+                            <li>Trademark</li>
+                            <li>Non-Discrimination</li>
+                            <li>Accessibility</li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>
+                            © Copyright Texas University
+                        </li>
+                    </ul>
+                </div>
+            </footer>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</body>
+
+<script src="scripts.js">
+
+
+    
+</script>
+
+
+</html>

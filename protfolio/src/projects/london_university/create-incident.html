@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" type="x-icon" href="img/logo-removebg-preview.png">
+    <link rel="stylesheet" href="styles.css">
+    <title>London University</title>
+</head>
+<body>
+
+    <header>
+        <div class="logo" data-url="index.html">
+            <img src="img/logo-removebg-preview.png">
+            <h2>London University</h2>
+        </div>
+
+        <div class="bar">
+            <nav>
+                <ul>
+                    <li>Service Request</li>
+                    <li class="knowledge-base" data-url="knowledge.html">Knowledge Base</li>
+                    <li class="lilo"><img src="img/logo.jpg"> </li>
+                    <li class="lilo">Alma, Student</li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="create-incident">
+        <div class="knowledge">
+            <div class="left">
+                <h3>Report a Problem</h3>
+            </div>
+            <div class="right">
+
+                <div class="searchbar">
+                    <div class="barr">
+                        <img src="img/search.png">
+                        <input type="text" placeholder="Search here">
+                    </div>
+                    <button>Search</button>
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        <div class="path">
+            <ul>
+                <li class="home1" data-url="index.html">Home</li>
+                <li class="create-incident" data-url="create-incident.html">Create Incident</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div class="how-can-we-help-you">
+                <div class="title">
+                    <h3>How can we help you?</h3>
+                    <p>Create an incident record to record to report and request assistance with an issue you are haning</p>
+
+                </div>
+
+                <div class="contant">
+                    <div class="cont">
+                        <p>
+                            Request assistance with an issue you are having. An incident record will be created and managed through to successful resolution. You will also be norified ofprograms. 
+                        </p>
+                    </div>
+
+                    <div class="cont">
+                        <label for="">Pleae describe your issue below</label>
+                        <input class="discribe" type="text" placeholder="Describe Issue">
+                    </div>
+
+                    <div class="cont">
+                        <label for="">Current Location</label>
+                        <input type="text" placeholder="Enter Location">
+                    </div>
+
+                    <div class="Category-urgency">
+                        
+                            <div class="cont">
+                                <label for="">Category</label>
+                                <select name="catrgory" id="" >
+                                    <option value="" >Select Category</option>
+                                    <option value="Security & compliance">Security & compliance</option>
+
+                                </select>
+                                <!-- <input type="text" placeholder="Select Category"> -->
+                            </div>
+                            <div class="cont">
+                                <label for="">Urgency</label>
+                                <select name="catrgory" id="">
+                                    <option value="">Select Urgency</option>
+                                    <option value="Low">Low</option>
+                                    <option value="Medium">Medium</option>
+                                    <option value="High">High</option>
+                                </select>
+                                <!-- <input type="text" placeholder="Select Urgency"> -->
+                            </div>
+                    </div>
+
+                    <div class="popup-div-for-issue">
+                        <h3>These may help resolve your issues</h3>
+                        <div class="issues">
+                            <div class="cont">
+                                <p>Why is my device not complaint when I've done everything I'm supposed to do?</p>
+                                <small>The compliance status in My device is not updated instantaneously. Changes that you make to your device can take up to one day to be reflected in My devices.</small>
+                            </div>
+                            <div class="cont">
+                                <p>What happens if a device is not complaint with the security requirements?</p>
+                                <small>If you have a non-complaint device, you are notified via email that you must take action. The mail specifies the steps you need to take to make the device compliant and you have a 30-day grace period</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="submit">
+                        <button class="create-incident-2" data-url="create-incident-2.html" >Submit</button>
+                        <p><i class='bx bx-link' style='color:#949191' ></i>Add Attachment</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="your-contact-information">
+                <div class="title">
+                    <h3>Your Contact Information</h3>
+                </div>
+                <div class="contant">
+                    <div class="cont">
+                        <p>Alma Smith</p>
+                        <p>Almasmith@londonuniversity.com</p>
+                    </div>
+
+                    <div class="edit-your">
+                        <small>Edit your Information</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+
+<script src="scripts.js"></script>
+
+<script>
+    document.querySelector('.discribe').addEventListener('input', function() {
+        const input = this.value.trim().toLowerCase();
+        const bottomDiv = document.querySelector('.popup-div-for-issue');
+
+        if (input === 'device not complaint') {
+            bottomDiv.style.display = 'block';
+        } else {
+            bottomDiv.style.display = 'none';
+        }
+    });
+
+
+     
+</script>
+
+</html>
+
+

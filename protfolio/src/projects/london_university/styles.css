@@ -1,0 +1,1771 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(230, 229, 229);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: lighter;
+    font-size: 150%;
+}
+
+/* header */
+header {
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: px;
+    position: fixed;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: red;
+    width: 30%;
+    cursor: pointer;
+}
+
+.logo a{
+    display: flex;
+    align-items: center;
+    color: red;
+}
+
+.logo img {
+    width: 52px;
+}
+
+.bar {
+    width: 70%;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;
+    /* gap: 20px; */
+    align-items: center;
+    padding: 10px;
+    padding-right: 30px;
+
+}
+
+nav ul li {
+    color: rgb(102, 101, 101);
+    display: inline-block;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+nav ul li a{
+    color:  rgb(102, 101, 101);
+}
+
+.lilo {
+    margin-right: 3px;
+}
+
+nav ul li img {
+    width: 35px;
+    border-radius: 50%;
+}
+
+/* home */
+
+.home {
+    background-image: url(img/bg.png);
+    width: 100%;
+    /* height: 75vh; */
+    display: flex;
+}
+
+.home .left {
+    /* background-color: aliceblue; */
+    width: 50%;
+    padding-left: 5%;
+    padding-top: 10%;
+    color: white;
+}
+
+.searchbar {
+    /* background-color: rebeccapurple; */
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.sbar {
+    background-color: white;
+    width: 79%;
+    display: flex;
+    align-items: center;
+    padding-left: 2%;
+    border-radius: 5px;
+    height: auto;
+}
+
+.sbar img {
+    width: 7%;
+    cursor: pointer;
+}
+
+#search {
+    font-size: 90%;
+    padding: 2.5%;
+    width: 100%;
+    border: 1px solid white;
+    height: 100%;
+    outline: none;
+    color: rgb(82, 81, 81);
+    border-radius: 5px;
+
+}
+
+.searchbar button {
+    font-size: 100%;
+    color: white;
+    width: 15%;
+    background-color: rgb(250, 204, 78);
+    padding: 2%;
+    border: 1px solid rgb(250, 204, 78);
+    border-radius: 5px;
+    margin-left: 15px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.btns {
+    /* background-color: aqua; */
+    width: 82%;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btns button {
+    color: white;
+    width: 22%;
+    font-size: 60%;
+    padding: 1% 1%;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.password-reset{
+    background-color: white;
+    width: 33%;
+    margin-top: 1%;
+    padding: 3%;
+    position: absolute;
+    display: none;
+}
+
+.password-reset .submit-ticket , .password-reset  .read-knowledge{
+    /* background-color: rgb(228, 118, 118); */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 10px;
+}
+
+a{
+    text-decoration-line: none;
+}
+
+.password-reset .submit-ticket small , .password-reset .read-knowledge small{
+    margin-top: 20px;
+    font-size: 100%;
+}
+
+.password-reset a{
+    margin-top: 20px;
+    text-decoration-line: none;
+}
+
+.home .right {
+    width: 50%;
+    text-align: right;
+    padding-top: 2%;
+    overflow: hidden;
+}
+
+.home .right img {
+    margin-top: 50px;
+    height: 80%;
+    width: 85%;
+    margin-bottom: 50px;
+}
+
+
+p {
+    color: black;
+    font-size: 110%;
+}
+
+small {
+    color: rgb(102, 101, 101);
+    font-size: 70%;
+}
+
+.fbox {
+    /* background-color: blue; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    bottom: 0;
+}
+
+.fbox div img {
+    width: 70px;
+    margin-bottom: 20px;
+}
+
+.fbox div {
+    background-color: white;
+    /* width: 150px; */
+    width: 11%;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* msg */
+
+
+/* 
+.msg img {
+    width: 70%;
+    height: 70%;
+    margin: 10px 10px;
+} */
+
+/* page-2 */
+
+.page2 {
+    margin-top: -10%;
+    /* background-color: red; */
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+
+.page2 h2 {
+    padding-top: 10%;
+}
+
+
+.freq img {
+    width: 25%;
+    margin-bottom: 10px;
+}
+
+.freq {
+    /* background-color: purple; */
+    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.freq div {
+    background-color: white;
+    width: 20%;
+    border: 1px solid rgb(218, 218, 218);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    cursor: pointer;
+}
+
+/* first,second,three */
+.my {
+    display: flex;
+    flex-direction: row;
+    gap: 1%;
+    margin: 5%;
+}
+
+.first,
+.second,
+.third {
+    background-color: white;
+    width: 50%;
+    padding: 20px;
+    border-radius: 5px;
+
+}
+
+.first .title,
+.second .title,
+.third .title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 10%;
+}
+
+.count {
+    margin-left: 10px;
+    background-color: rgb(218, 218, 218);
+    padding: 3px;
+    /* width: 5%;
+    height:30px; */
+    display: flex;
+    justify-content: left;
+    /* align-items: center; */
+    border-radius: 50%;
+    font-size: x-small;
+}
+
+.my .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.my .title small {
+    /* margin-left: 16%; */
+    color: rgb(36, 95, 255);
+    cursor: pointer;
+}
+
+.cont img {
+    width: 12%;
+}
+
+.my .cont {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 3%;
+    gap: 4%;
+    border-bottom: 1px solid;
+
+    padding-bottom: 7%;
+    padding-top: 3%;
+    cursor: pointer;
+}
+
+.my .cont div,
+.fill {
+    margin-left: 10p;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 15%;
+}
+
+.my .cont div p,
+.fill p {
+    font-size: 90%;
+    /* display: inline-block; */
+}
+
+.incident {
+    color: red;
+}
+
+.my .cont button {
+    margin-left: 5%;
+    padding: 1%;
+    height: 2%;
+    font-size: x-small;
+    background-color: rgb(102, 213, 250);
+    border: none;
+    cursor: pointer;
+}
+
+.second .cont button {
+    margin-left: 14%;
+    cursor: pointer;
+}
+
+.fill input {
+    width: 95%;
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 9%;
+    outline: none;
+}
+
+.fill select {
+    width: 100%;
+    padding: 3%;
+    margin-top: 5%;
+    margin-bottom: 9%;
+    outline: none;
+}
+
+.third button {
+    font-size: 100%;
+    color: white;
+    width: 30%;
+    background-color: rgb(201, 8, 8);
+    padding: 3%;
+    border: 1px solid rgb(201, 8, 8);
+    border-radius: 5px;
+    margin-left: 70%;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.question {
+    background-color: white;
+    margin: 5%;
+    padding: 0% 3%;
+}
+
+.question .ans {
+    width: 100%;
+    border-bottom: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: left;
+    padding-bottom: 3%;
+}
+
+.ans p {
+    margin-top: 6%;
+    margin-bottom: 3%;
+}
+
+.ans small {
+    font-size: 100%;
+
+}
+
+.question .ans img {
+    width: 2.5%;
+    height: fit-content;
+}
+
+.page3 {
+    background-color: rgb(201, 8, 8);
+    margin-top: 3%;
+    width: 100vw;
+    height: 59vh;
+    margin-bottom: 3%;
+}
+
+
+/* .................................................................. */
+
+
+.events {
+    /* background-color: aqua; */
+    width: 90vw;
+    /* Reduced width */
+    height: 70vh;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    /* padding-bottom: 10%; Space for dots */
+    padding: 5% 5%;
+}
+
+.events-container {
+    /* background-color: #717171; */
+    position: relative;
+    height: 60%;
+    overflow: hidden;
+    /* Ensure content doesn't overflow */
+}
+
+.sets {
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    transition: transform 2.5s ease-in-out;
+    height: 100%;
+}
+
+.set {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    /* Ensure padding/margin are included in width/height */
+}
+
+
+.nav-btn {
+    position: absolute;
+    top: 35%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    /* position: fixed; */
+    z-index: 20;
+    /* Ensure nav buttons are in front */
+}
+
+.left-btn {
+    left: 15px;
+    /* Adjusted for spacing from the left edge */
+}
+
+.right-btn {
+    right: 12px;
+    /* Adjusted for spacing from the right edge */
+}
+
+.dots {
+    text-align: center;
+    position: relative;
+    bottom: -20px;
+    width: 100%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+.event small img {
+    width: 2%;
+}
+
+.event img {
+    width: 40px;
+}
+
+
+.event {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 28%;
+    height: 150%;
+    padding: 2%;
+    gap: 10px;
+}
+
+.event p {
+    font-size: 83%;
+}
+
+.us img {
+    width: 18%;
+}
+
+.us p {
+    font-size: 100%;
+    margin-bottom: 4%;
+}
+
+.us div small {
+    color: black;
+    font-size: 70%;
+}
+
+.us {
+    /* background-color: #717171; */
+    width: 25%;
+    display: flex;
+    text-align: left;
+    gap: 5%;
+}
+
+.sml {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    /* background-color: antiquewhite; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+footer {
+    background-color: rgb(199, 5, 5);
+    width: 100vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 10px;
+    color: white;
+}
+
+
+footer .one {
+    /* background-color: #717171; */
+    width: 25%;
+
+}
+
+footer .two {
+    /* background-color: #bbb; */
+    width: 75%;
+    padding: 2% 10% 0% 5%;
+}
+
+.two ul {
+    display: flex;
+    gap: 3%;
+    list-style: none;
+    margin-bottom: 3%;
+}
+
+.two li {
+    font-size: 14px;
+}
+
+/* ...............................................Knowledge page */
+
+
+.knowledge {
+    background-color: rgb(214, 6, 6);
+    width: 100vw;
+    height: 13vh;
+    display: flex;
+    padding-top: 5%;
+    color: white;
+}
+
+.knowledge .left {
+    /* background-color: aqua; */
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    gap: 10%;
+}
+
+.knowledge .right {
+    /* background-color: antiquewhite; */
+    width: 60%;
+    height: 100%;
+    padding-left: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.knowledge p,
+.knowledge li {
+    font-size: 80%;
+    color: white;
+    cursor: pointer;
+}
+
+.knowledge .searchbar {
+    /* background-color: white    ; */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.barr {
+    background-color: white;
+    width: 60%;
+    display: flex;
+    padding: 1%;
+    border-radius: 5px;
+}
+
+.barr input {
+    width: 90%;
+    height: 100%;
+    padding: 2%;
+    outline: none;
+    border: none;
+    border-radius: 2%;
+}
+
+.knowledge .right ul {
+    display: flex;
+    gap: 8%;
+    list-style: none;
+    margin-top: 3%;
+    margin-bottom: 2%;
+}
+
+.path {
+    background-color: white;
+    padding: 1%;
+    color: rgb(0, 183, 255);
+    margin-bottom: 2%;
+}
+
+.path ul {
+    display: flex;
+    gap: 2%;
+    list-style: none;
+    font-weight: bold;
+    font-size: 100%;
+}
+
+.path a{
+    color: rgb(0, 183, 255);
+}
+
+.path li{
+    cursor: pointer;
+}
+
+.path li a::after {
+    content: '>';
+    margin-left: 20%;
+    font-size: 90%;
+}
+
+.path li a:last-child::after {
+    content: '';
+    margin-left: 0;
+}
+
+.knowledge-base .page2 h2 {
+    font-size: 130%;
+}
+
+.knowledge-base .page2 .freq {
+    /* background-color: aqua; */
+    padding: 2% 5% 5% 5%;
+}
+
+.article {
+    /* background-color: aliceblue; */
+    width: 95%;
+    display: flex;
+    gap: 10px;
+    margin: 1% 1% 1% 3.5%;
+}
+
+.arti {
+    background-color: white;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 1.5%;
+}
+
+.arti .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 5% 0 0%;
+    font-size: 80%;
+}
+
+.arti .title small {
+    color: rgb(0, 183, 255);
+}
+
+.arti .cont {
+    /* background-color: aqua; */
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid;
+    margin-top: 3%;
+    padding-bottom: 2%;
+    font-size: 70%
+}
+
+
+.cont .images {
+    width: 50%;
+}
+
+.cont .images img {
+    width: 5%;
+}
+
+.arti .cont .etho {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* .............................Teaching & Learning .................*/
+
+.teach,
+.create-incident .container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 3%;
+    margin-left: 2%;
+}
+
+.teach .categories {
+    background-color: rgb(240, 241, 241);
+    width: 25%;
+    border: 2px solid rgb(173, 170, 170);
+    border-radius: 5px;
+
+}
+
+.categories .title,
+.most-viewed .title , .how-can-we-help-you .title{
+    background-color: rgb(218, 216, 216);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 5%;
+    font-size: 80%;
+    border-bottom: 2px solid rgb(173, 170, 170);
+
+}
+
+.categories .title p,
+.result .show p {
+    color: rgb(0, 183, 255);
+}
+
+.categories select {
+    width: 100%;
+    padding: 3%;
+    outline: none;
+    border: 2px solid rgb(212, 208, 208);
+    border-radius: 5px;
+    margin-bottom: 10%;
+}
+
+.categories .contant,
+.result .contant,
+.kb0011014 .contant ,.how-can-we-help-you .contant{
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.categories .contant{
+    gap: 10px;
+}
+
+.result .contant h3,
+.kb0011014 .contant h3 {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+.result .contant,
+.kb0011014 .contant {
+    font-size: 95%;
+}
+
+.teach .result,
+.container .kb0011014 , .how-can-we-help-you{
+    background-color: rgb(240, 241, 241);
+    width: 70%;
+    border: 2px solid rgb(173, 170, 170);
+    border-radius: 5px;
+}
+
+.result .title,
+.result .show,
+.container .most-viewed .title {
+    background-color: rgb(218, 216, 216);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 3%;
+    font-size: 80%;
+    border-bottom: 2px solid rgb(173, 170, 170);
+}
+
+.result .show ul {
+    list-style: none;
+    display: flex;
+    gap: 5%;
+    width: 50%;
+}
+
+.result .show li:last-child::after {
+    content: '✖';
+    margin-left: 3px;
+}
+
+.result .title .sort {
+    display: flex;
+}
+
+.result .title .sort select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.result .contant div {
+    margin-bottom: 1%;
+}
+
+.result .contant .cont,
+.kb0011014 .contant .cont {
+    margin-bottom: 3%;
+}
+
+.result .contant .cont .etho,
+.kb0011014 .contant .cont .etho {
+    display: flex;
+}
+
+/* .............................................Knowledge-2 */
+
+
+.container .kb0011014 .title{
+    background-color: #969292;
+    padding: 1%;
+    border: 2px solid rgb(102, 101, 101);
+}
+
+
+.kb0011014 .contant .cont .etho {
+    margin-bottom: 5%;
+    margin-top: 1%;
+}
+
+.kb0011014 .contant p {
+    font-size: 90%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+
+}
+
+.kb0011014 .contant a {
+    font-size: 80%;
+    color: rgb(0, 183, 255);
+    text-decoration-line: none;
+}
+
+.kb0011014 .helpful{
+    /* background-color: aqua; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 4%;
+    border-bottom: 2px solid rgb(173, 170, 170);
+}
+
+.helpful-btn{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+}
+
+.helpful-btn button{
+    padding: 4% 10%;
+    border: 2px solid rgb(173, 170, 170);
+    border-radius: 10%;
+    font-size: 90%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.helpful .rating{
+    /* background-color: rgb(111, 111, 245); */
+    width: 42%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.helpful .rating .stars i{
+    font-size: 180%;
+    cursor: pointer;
+}
+
+.most-viewed .cont {
+    /* background-color: aqua; */
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.most-viewed .cont p {
+    font-size: 90%;
+}
+
+.most-viewed .cont small {
+    font-size: 60%;
+}
+
+.most-viewed .cont .etho {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    margin-bottom: 10%;
+}
+
+.most-viewed .cont .etho img {
+    width: 10%;
+}
+
+.most-viewed .most-viewed-cont {
+    padding: 10% 7%;
+}
+
+.most-viewed .title {
+    padding: 3% 3% 3% 7%;
+}
+
+.knowledge-2 .container{
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+}
+
+.container .most-viewed-main {
+gap: 20px;
+    width: 25%;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.most-viewed {
+    border: 2px solid rgb(173, 170, 170);
+    background-color: rgb(240, 241, 241);
+}
+
+/* .................................Create incident................................................. */
+
+.create-incident .knowledge{
+    padding-top: 3%;
+    height: 15vh;
+}
+
+.how-can-we-help-you .cont p ,.your-contact-information .cont p{
+    font-size: 100%;
+    margin-bottom: 3%;
+}
+
+
+
+.how-can-we-help-you .cont{
+    /* background-color: blueviolet; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border: none;
+    margin-bottom: 3%;
+}
+
+.how-can-we-help-you .cont input{
+    border: 2px solid rgb(173, 170, 170);
+    padding: 2%;
+    font-size: 90%;
+    outline: none;
+width: 95%;
+border-radius: 5px;
+background-color: transparent;
+}
+
+#discribe{
+    /* height: 5vh; */
+    padding: 2% 2% 5% 2%;
+    
+}
+
+.how-can-we-help-you .Category-urgency{
+    width: 100%;
+    display: flex;
+    /* background-color: rebeccapurple; */
+    justify-content: space-between;
+}
+
+.how-can-we-help-you .Category-urgency .cont{
+    width: 48%;
+    /* background-color: aliceblue; */
+}
+
+.how-can-we-help-you .Category-urgency .cont select{
+    padding: 5%;
+    width: 100%;
+    border: 2px solid rgb(173, 170, 170);
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    font-size: 100%;
+
+    -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+
+}
+
+.how-can-we-help-you .Category-urgency .cont select option {
+    /* background-color: aqua; */
+    font-size: 130%;
+    outline: none;
+
+}
+
+.your-contact-information{
+    width: 28%;
+    /* background-color: aqua; */
+    border-radius: 5px;
+}
+
+.your-contact-information .title{
+    background-color: rgb(214, 6, 6);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 7%;
+    font-size: 80%;
+    border: 2px solid rgb(173, 170, 170);
+    border-radius: 5px;
+
+}
+
+.your-contact-information .cont{
+    /* background-color: antiquewhite; */
+    padding: 5% 5%;
+    border-bottom: 2px solid rgb(173, 170, 170);
+}
+
+.your-contact-information .contant{
+    border-right: 2px solid rgb(173, 170, 170);
+    border-left: 2px solid rgb(173, 170, 170);
+    border-bottom: 2px solid rgb(173, 170, 170);
+    background-color: rgb(240, 241, 241);
+    border-radius: 5px;
+}
+
+.your-contact-information .edit-your{
+    padding: 5%;
+    font-size: 120%;
+    text-align: end;
+}
+
+.your-contact-information .edit-your small{
+    color: rgb(0, 183, 255);
+    cursor: pointer;
+
+}
+
+.how-can-we-help-you .contant .submit{
+    margin-top: 4%;
+    /* background-color: red; */
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgb(173, 170, 170);
+    padding-top: 5%;
+
+}
+
+.how-can-we-help-you .contant .submit button{
+    padding: 1.5% 7%;
+    border: 2px solid rgb(173, 170, 170);
+    background-color: rgb(214, 6, 6);
+    font-size: 100%;
+    border-radius: 5%;
+    color: white;
+    cursor: pointer;
+}
+
+.how-can-we-help-you .contant .submit p i{
+    font-size: 120%;
+}
+
+.how-can-we-help-you .contant .submit p{
+    font-size: 100%;
+    color: rgb(173, 170, 170);
+    cursor: pointer;
+}
+
+.contant .popup-div-for-issue{
+    /* background-color: antiquewhite; */
+    display: none;
+}
+
+.contant .popup-div-for-issue h3{
+    font-size: 125%;
+}
+
+.contant .popup-div-for-issue .issues{
+    margin-top: 3%;
+    background-color: rgb(218, 216, 216);
+    padding: 3%;
+    font-size: 110%;
+    border: 2px solid rgb(173, 170, 170);
+    border-radius: 5px;
+}
+
+.contant .popup-div-for-issue .issues .cont {
+    padding-bottom: 4%;
+    border-bottom: 2px solid rgb(173, 170, 170);
+}
+
+.contant .popup-div-for-issue .issues .cont:last-child{
+    border: none;
+}
+
+.contant .popup-div-for-issue .issues .cont p{
+    margin-bottom: 0%;
+}
+
+.contant .popup-div-for-issue .issues small{
+    font-size: 80%;
+
+}
+
+/* ..................................Create incident two................................................... */
+
+.create-incident-2 .container{
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.send-another-msg{
+    /* background-color: #eb7676; */
+    width: 70% ;
+    border: 2px solid #555555;
+}
+
+.send-another-msg .title{
+    background-color: #969292;
+    border-bottom: 2px solid #555555;
+    padding: 2%;
+}
+
+.send-another-msg .contant{
+    padding: 2%;
+    background-color: #f0f0f0;
+    width: 96%;
+    
+}
+
+.send-another-msg .contant .your-msg{
+    background-color: #dddddd;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 2px solid #969292;
+    border-radius: 4px;
+}
+
+.send-another-msg .contant .your-msg button{
+    padding: 1.5% 5%;
+    background-color: rgb(0, 183, 255);
+    border: 1px solid rgb(0, 183, 255);
+    color: white;
+}
+
+.send-another-msg .contant .your-msg input{
+    width: 90%;
+    padding-left: 2%;
+    border: none;
+    outline: none;
+}
+
+.send-another-msg .contant .vertical-line{
+    /* background-color: #eb7676; */
+    width: 100%;
+    display: flex;
+}
+
+.send-another-msg .contant .outer-circle{
+    /* background-color: aquamarine; */
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 20%;
+    gap: 100px;
+    padding-top: 7%;
+}
+
+.send-another-msg .contant .inner-circle{
+    background-color: rgb(102, 101, 101);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10px;
+}
+
+.send-another-msg .contant .inner-circle i{
+    font-size: 60px;
+}
+
+.send-another-msg .contant .outer-circle button{
+    background-color: rgb(199, 5, 5);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    font-size: 100%;
+}
+
+.send-another-msg .contant .outer-msg{
+    /* background-color: bisque; */
+    width: 40%;
+    padding:3%;
+}
+
+.send-another-msg .contant .outer-msg .tooltip1{
+    border: 1px solid rgb(172, 168, 168);
+    padding: 3%;
+    margin-top: 10%;
+    border-radius: 5px;
+}
+
+.send-another-msg .contant .outer-msg .tooltip2{
+    background-color: transparent;
+    border: 1px solid rgb(172, 168, 168);
+    padding: 3%;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+
+.container .your-location-attachment{
+    /* background-color: rgb(240, 241, 241); */
+    
+    width: 27%;
+}
+
+.container .your-location-attachment .contant{
+    /* background-color: rgb(250, 204, 78); */
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+}
+
+.container .your-location-attachment .contant .one{
+    width: 100%;
+    background-color: rgb(240, 241, 241);
+    border: 1px solid rgb(172, 168, 168);
+    border-radius: 5px;
+}
+
+.container .your-location-attachment .contant .one .title{
+    background-color: #f02849;
+    padding: 5%;
+    color: white;
+}
+
+.container .your-location-attachment .contant .one .detail{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-bottom: 1px solid rgb(172, 168, 168);
+}
+
+.container .your-location-attachment .contant .one .detail .num{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .your-location-attachment .contant .one .loca{
+    padding: 5%;
+}
+
+.container .your-location-attachment .contant .two{
+    width: 100%;
+    background-color: rgb(240, 241, 241);
+    border: 1px solid rgb(172, 168, 168);
+    border-radius: 5px;
+}
+
+.container .your-location-attachment .contant .two .title{
+    background-color: #f02849;
+    padding: 5%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .your-location-attachment .contant .two .title i{
+    font-size: 150%;
+}
+
+.container .your-location-attachment .contant .three{
+    width: 100%;
+    background-color: rgb(240, 241, 241);
+    border: 1px solid rgb(172, 168, 168);
+    border-radius: 5px;
+}
+
+.container .your-location-attachment .contant .three .title{
+    background-color: #f02849;
+    padding: 5%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .your-location-attachment .contant .three .contant{
+    background-color: rgb(240, 241, 241);
+    padding: 5%;
+}
+
+
+
+.drop-zone {
+    width: 100%;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #999;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.drop-zone.dragover {
+    background-color: #e0f7fa;
+    border-color: #00acc1;
+    color: #00796b;
+}
+
+
+
+
+
+
+
+
+
+
+
+.circle-container {
+    position: relative;
+}
+
+.circle {
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f02849;
+    font-size: 200%;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+
+    position: relative;
+    position: fixed;
+    top: 63%;
+    right: 58px;
+}
+
+.circle.active {
+    background-color: white; 
+}
+
+.chat-popup {
+    display: none;
+    position: absolute;
+    position: fixed;
+    top: 20%; 
+    right: 0px;
+    transform: translateX(-50%);
+    width: 250px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* padding: 15px; */
+    /* box-sizing: border-box; */
+    z-index: 1000;
+}
+
+.chat-popup .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f02849;
+    padding: 5%;
+}
+
+.chat-popup .chat-header .profile{
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.chat-popup .chat-header .set-pro-x{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.chat-popup .chat-header span{
+    font-size: 150%;
+    color: white;
+    cursor: pointer;
+}
+
+.chat-popup .chat-date{
+    /* background-color: red; */
+    margin-top: 10px;
+    font-size: 70%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.chat-popup .chat-messages {
+    height: 200px;
+    border-bottom: 1px solid  rgb(230, 229, 229);
+    max-height: 200px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+.chat-popup .message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 70%;
+    clear: both;
+}
+
+.chat-popup .message.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+.chat-popup .message.received {
+    background-color: rgb(230, 229, 229);
+    align-self: flex-start;
+    margin-right: auto;
+}
+
+.chat-popup .chat-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.chat-popup .chat-input button{
+    background-color: transparent;
+    width: fit-content;
+    padding: 5px;
+    font-size: 120%;
+    outline: none;
+    border: none;
+}
+
+.chat-popup textarea {
+    width: 80%;
+    padding: 10px;
+    /* border-radius: 20px; */
+    border: none;
+    resize: none;
+    outline: none;
+
+}
+
+.chat-popup .default-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: transparent;
+    color:#f02849;
+    border: 1px solid #f02849;
+    cursor: pointer;
+    font-size: 70%;
+}
+
+.default-button {
+    background-color: #dddddd;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    align-self: center;
+}
+
+.suggestions {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.suggestions .title {
+    background-color: #f0f0f0;
+    padding: 3%;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #3b3b3b;
+    display: flex;
+    justify-content: space-between;
+}
+
+.suggestions .title span{
+    color: black;
+    cursor: pointer;
+}
+
+.suggestions .suggestion {
+    padding: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-bottom: 1px solid;
+}
+
+.suggestions .suggestion:hover {
+    background-color: #ddd;
+}
+
+.verification {
+    display: none;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.verification .message {
+    margin-bottom: 10px;
+}
+
+.verification button {
+    margin: 5px;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 1px;
+    background-color: #969292;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.verification button.no {
+    background-color: #969292;
+}
+
+
+.verification button:hover{
+    background-color: #f02849;
+}
+
+
+
+
+.one .title p {
+    font-weight: bold;
+}
+
+.one .detail {
+    display: flex;
+    justify-content: space-between;
+}
+
+.one .num p {
+    font-weight: bold;
+}
+
+.one .num small {
+    display: block;
+}
+
+.loca small {
+    display: block;
+    margin-top: 5px;
+}
+
+
